@@ -40,10 +40,10 @@ module <tb_name>_tb();
 
 	initial
 	begin
-		clock = 1'b0;
+		<clock> = 1'b0;
 		forever
 		begin
-			#5 clock = ~clock; // An example of 100 MHz clock generation
+			#5 <clock> = ~<clock>; // An example of 100 MHz clock generation
 		end
 	end
 
